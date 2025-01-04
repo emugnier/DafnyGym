@@ -1,0 +1,117 @@
+,Unnamed: 0,Index,Original Method File,Original Method,Original Method Time,Original Method Result,Assertion,New Method File,New Method,New Method Time,New Method Result
+0,0,30,./DafnyGym/ground_truth/libraries/src/JSON/ZeroCopy/Serializer.dfy,MembersImpl,0.908584,Correct,"assert wr == MembersSpec(obj, members[..0], writer);
+",./DafnyGym/assertions_removed/MembersImpl_fix_30.dfy,MembersImpl,1.000806,Errors
+1,1,31,./DafnyGym/ground_truth/libraries/src/JSON/ZeroCopy/Serializer.dfy,MembersImpl,0.908584,Correct,"assert members[..i+1][..i] == members[..i];
+",./DafnyGym/assertions_removed/MembersImpl_fix_31.dfy,MembersImpl,2.33283,Errors
+2,2,32,./DafnyGym/ground_truth/libraries/src/JSON/ZeroCopy/Serializer.dfy,MembersImpl,0.908584,Correct,"assert members[..|members|] == members;
+",./DafnyGym/assertions_removed/MembersImpl_fix_32.dfy,MembersImpl,1.838043,Errors
+3,3,39,./DafnyGym/ground_truth/libraries/src/Collections/Sets/Sets.dfy,LemmaIsSingleton,0.476277,Correct,"assert s == {x};
+",./DafnyGym/assertions_removed/LemmaIsSingleton_fix_39.dfy,LemmaIsSingleton,0.503212,Errors
+4,4,42,./DafnyGym/ground_truth/libraries/src/Collections/Sets/Sets.dfy,LemmaUnionSize,0.553964,Correct,"assert xr + yr == xs + ys - {y};
+",./DafnyGym/assertions_removed/LemmaUnionSize_fix_42.dfy,LemmaUnionSize,0.595733,Errors
+5,5,43,./DafnyGym/ground_truth/libraries/src/Collections/Sets/Sets.dfy,LemmaUnionSize,0.553964,Correct,"assert xs + yr == xs + ys - {y};
+",./DafnyGym/assertions_removed/LemmaUnionSize_fix_43.dfy,LemmaUnionSize,0.587551,Errors
+6,6,45,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/LittleEndianNat.dfy,LemmaSeqNeq,0.576043,Correct,"assert xs[..i+1][..i] == xs[..i];
+",./DafnyGym/assertions_removed/LemmaSeqNeq_fix_45.dfy,LemmaSeqNeq,0.628929,Errors
+7,7,46,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/LittleEndianNat.dfy,LemmaSeqNeq,0.576043,Correct,"assert ys[..i+1][..i] == ys[..i];
+",./DafnyGym/assertions_removed/LemmaSeqNeq_fix_46.dfy,LemmaSeqNeq,0.666714,Errors
+8,8,49,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/LittleEndianNat.dfy,LemmaSeqPrefixNeq,0.665789,Correct,"assert xs[..i] == xs;
+",./DafnyGym/assertions_removed/LemmaSeqPrefixNeq_fix_49.dfy,LemmaSeqPrefixNeq,0.69601,Errors
+9,9,50,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/LittleEndianNat.dfy,LemmaSeqPrefixNeq,0.665789,Correct,"assert ys[..i] == ys;
+",./DafnyGym/assertions_removed/LemmaSeqPrefixNeq_fix_50.dfy,LemmaSeqPrefixNeq,0.624192,Errors
+10,10,51,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/LittleEndianNat.dfy,LemmaSeqPrefixNeq,0.665789,Correct,"assert DropLast(xs[..i+1]) == xs[..i];
+",./DafnyGym/assertions_removed/LemmaSeqPrefixNeq_fix_51.dfy,LemmaSeqPrefixNeq,68.288691,Errors
+11,11,52,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/LittleEndianNat.dfy,LemmaSeqPrefixNeq,0.665789,Correct,"assert DropLast(ys[..i+1]) == ys[..i];
+",./DafnyGym/assertions_removed/LemmaSeqPrefixNeq_fix_52.dfy,LemmaSeqPrefixNeq,50.733517,Errors
+12,12,54,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaCardinalityOfEmptySetIs0,0.497185,Correct,"assert xs[0] in ToSet(xs);
+",./DafnyGym/assertions_removed/LemmaCardinalityOfEmptySetIs0_fix_54.dfy,LemmaCardinalityOfEmptySetIs0,0.581582,Errors
+13,13,56,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaFlattenReverseConcat,0.526873,Correct,"assert xs + ys == xs;
+",./DafnyGym/assertions_removed/LemmaFlattenReverseConcat_fix_56.dfy,LemmaFlattenReverseConcat,0.58204,Errors
+14,14,57,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaInvFoldRight,0.53669,Correct,"assert [xs[0]] + xs[1..] == xs;
+",./DafnyGym/assertions_removed/LemmaInvFoldRight_fix_57.dfy,LemmaInvFoldRight,0.570371,Errors
+15,15,58,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaInvFoldLeft,0.558379,Correct,"assert [xs[0]] + xs[1..] == xs;
+",./DafnyGym/assertions_removed/LemmaInvFoldLeft_fix_58.dfy,LemmaInvFoldLeft,0.626844,Errors
+16,16,59,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaSubseqMin,0.569308,Correct,"assert xs[seq(|subseq|, i requires 0 <= i < |subseq| => i + from)[k]] in xs;
+",./DafnyGym/assertions_removed/LemmaSubseqMin_fix_59.dfy,LemmaSubseqMin,0.814788,Errors
+17,17,60,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaFlattenConcat,0.574322,Correct,"assert xs + ys == ys;
+",./DafnyGym/assertions_removed/LemmaFlattenConcat_fix_60.dfy,LemmaFlattenConcat,0.558334,Errors
+18,18,61,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaSubseqMax,0.589932,Correct,"assert xs[seq(|subseq|, i requires 0 <= i < |subseq| => i + from)[k]] in xs;
+",./DafnyGym/assertions_removed/LemmaSubseqMax_fix_61.dfy,LemmaSubseqMax,0.697506,Errors
+19,19,63,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaFlattenLengthLeMul,0.606038,Errors,"assert |FlattenReverse(xs[..|xs|-1])| <= (|xs|-1) * j;
+",./DafnyGym/assertions_removed/LemmaFlattenLengthLeMul_fix_63.dfy,LemmaFlattenLengthLeMul,0.629285,Errors
+20,20,64,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaCardinalityOfSet,0.607594,Correct,"assert ToSet(xs) == ToSet(DropLast(xs)) + {Last(xs)};
+",./DafnyGym/assertions_removed/LemmaCardinalityOfSet_fix_64.dfy,LemmaCardinalityOfSet,0.634503,Errors
+21,21,65,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaCardinalityOfSetNoDuplicates,0.619225,Correct,"assert ToSet(xs) == ToSet(DropLast(xs)) + {Last(xs)};
+",./DafnyGym/assertions_removed/LemmaCardinalityOfSetNoDuplicates_fix_65.dfy,LemmaCardinalityOfSetNoDuplicates,0.520667,Errors
+22,22,67,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaNoDuplicatesCardinalityOfSet,0.629138,Correct,"assert ToSet(xs) == {First(xs)} + ToSet(DropFirst(xs));
+",./DafnyGym/assertions_removed/LemmaNoDuplicatesCardinalityOfSet_fix_67.dfy,LemmaNoDuplicatesCardinalityOfSet,0.559933,Errors
+23,23,71,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaMultisetHasNoDuplicates,0.630645,Correct,"assert xs == DropLast(xs) + [Last(xs)];
+",./DafnyGym/assertions_removed/LemmaMultisetHasNoDuplicates_fix_71.dfy,LemmaMultisetHasNoDuplicates,0.533231,Errors
+24,24,73,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaMinOfConcat,0.763877,Correct,"assert xs[1..] + ys == (xs + ys)[1..];
+",./DafnyGym/assertions_removed/LemmaMinOfConcat_fix_73.dfy,LemmaMinOfConcat,0.94318,Errors
+25,25,74,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,LemmaMaxOfConcat,0.843821,Correct,"assert xs[1..] + ys == (xs + ys)[1..];
+",./DafnyGym/assertions_removed/LemmaMaxOfConcat_fix_74.dfy,LemmaMaxOfConcat,0.837494,Errors
+26,26,76,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,SortedUnique,1.300891,Correct,"assert xs == [xs[0]] + xs[1..];
+",./DafnyGym/assertions_removed/SortedUnique_fix_76.dfy,SortedUnique,1.844795,Errors
+27,27,77,./DafnyGym/ground_truth/libraries/src/Collections/Sequences/Seq.dfy,SortedUnique,1.300891,Correct,"assert ys == [ys[0]] + ys[1..];
+",./DafnyGym/assertions_removed/SortedUnique_fix_77.dfy,SortedUnique,1.286445,Errors
+28,28,99,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Power2.dfy,LemmaPow2MaskDiv2,0.540642,Correct,"assert forall i {:trigger IsLe(0, i)} :: IsLe(0, i) && f(i) ==> f(i + 1);
+",./DafnyGym/assertions_removed/LemmaPow2MaskDiv2_fix_99.dfy,LemmaPow2MaskDiv2,300.814836,TimedOut
+29,29,151,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/GeneralInternals.dfy,LemmaInductionHelper,0.543806,Correct,"assert f((x - n) + n);
+",./DafnyGym/assertions_removed/LemmaInductionHelper_fix_151.dfy,LemmaInductionHelper,0.526943,Errors
+30,30,152,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/GeneralInternals.dfy,LemmaInductionHelper,0.543806,Correct,"assert f((x + n) - n);
+",./DafnyGym/assertions_removed/LemmaInductionHelper_fix_152.dfy,LemmaInductionHelper,0.533907,Errors
+31,31,153,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivInductionAutoForall,0.515651,Correct,"assert forall i :: IsLe(0, i) && i < n ==> f(i);
+",./DafnyGym/assertions_removed/LemmaDivInductionAutoForall_fix_153.dfy,LemmaDivInductionAutoForall,0.570858,Errors
+32,32,154,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivInductionAutoForall,0.515651,Correct,"assert forall i {:trigger f(i), f(i + n)} :: IsLe(0, i) && f(i) ==> f(i + n);
+",./DafnyGym/assertions_removed/LemmaDivInductionAutoForall_fix_154.dfy,LemmaDivInductionAutoForall,0.541166,Errors
+33,33,155,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivInductionAutoForall,0.515651,Correct,"assert forall i {:trigger f(i), f(i - n)} :: IsLe(i + 1, n) && f(i) ==> f(i - n);
+",./DafnyGym/assertions_removed/LemmaDivInductionAutoForall_fix_155.dfy,LemmaDivInductionAutoForall,0.524046,Errors
+34,34,156,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivInductionAuto,0.60392,Correct,"assert forall i :: IsLe(0, i) && i < n ==> f(i);
+",./DafnyGym/assertions_removed/LemmaDivInductionAuto_fix_156.dfy,LemmaDivInductionAuto,0.649939,Errors
+35,35,157,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivInductionAuto,0.60392,Correct,"assert forall i {:trigger f(i), f(i + n)} :: IsLe(0, i) && f(i) ==> f(i + n);
+",./DafnyGym/assertions_removed/LemmaDivInductionAuto_fix_157.dfy,LemmaDivInductionAuto,0.602804,Errors
+36,36,158,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivInductionAuto,0.60392,Correct,"assert forall i {:trigger f(i), f(i - n)} :: IsLe(i + 1, n) && f(i) ==> f(i - n);
+",./DafnyGym/assertions_removed/LemmaDivInductionAuto_fix_158.dfy,LemmaDivInductionAuto,0.560044,Errors
+37,37,170,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/DivInternals.dfy,LemmaDivAuto,0.958066,Correct,"assert f(x, y);
+",./DafnyGym/assertions_removed/LemmaDivAuto_fix_170.dfy,LemmaDivAuto,1.020473,Errors
+38,38,180,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulInductionAutoForall,0.484195,Correct,"assert forall i {:trigger f(i)} :: IsLe(0, i) && f(i) ==> f(i + 1);
+",./DafnyGym/assertions_removed/LemmaMulInductionAutoForall_fix_180.dfy,LemmaMulInductionAutoForall,1.454501,Errors
+39,39,181,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulInductionAutoForall,0.484195,Correct,"assert forall i {:trigger f(i)} :: IsLe(i, 0) && f(i) ==> f(i - 1);
+",./DafnyGym/assertions_removed/LemmaMulInductionAutoForall_fix_181.dfy,LemmaMulInductionAutoForall,1.788163,Errors
+40,40,182,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulInductionAuto,0.612598,Correct,"assert forall i {:trigger f(i)} :: IsLe(0, i) && f(i) ==> f(i + 1);
+",./DafnyGym/assertions_removed/LemmaMulInductionAuto_fix_182.dfy,LemmaMulInductionAuto,1.663354,Errors
+41,41,183,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulInductionAuto,0.612598,Correct,"assert forall i {:trigger f(i)} :: IsLe(i, 0) && f(i) ==> f(i - 1);
+",./DafnyGym/assertions_removed/LemmaMulInductionAuto_fix_183.dfy,LemmaMulInductionAuto,0.953782,Errors
+42,42,185,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulDistributes,0.669675,Correct,"assert forall i {:trigger (x + (i + 1)) * z} :: (x + (i + 1)) * z == ((x + i) + 1) * z == (x + i) * z + z;
+",./DafnyGym/assertions_removed/LemmaMulDistributes_fix_185.dfy,LemmaMulDistributes,0.605735,Errors
+43,43,186,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulDistributes,0.669675,Correct,"assert forall i {:trigger (x + (i - 1)) * z} :: (x + (i - 1)) * z == ((x + i) - 1) * z == (x + i) * z - z;
+",./DafnyGym/assertions_removed/LemmaMulDistributes_fix_186.dfy,LemmaMulDistributes,0.598956,Errors
+44,44,187,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulDistributes,0.669675,Correct,"assert forall i {:trigger (x - (i + 1)) * z} :: (x - (i + 1)) * z == ((x - i) - 1) * z == (x - i) * z - z;
+",./DafnyGym/assertions_removed/LemmaMulDistributes_fix_187.dfy,LemmaMulDistributes,0.588437,Errors
+45,45,188,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulDistributes,0.669675,Correct,"assert forall i {:trigger (x - (i - 1)) * z} :: (x - (i - 1)) * z == ((x - i) + 1) * z == (x - i) * z + z;
+",./DafnyGym/assertions_removed/LemmaMulDistributes_fix_188.dfy,LemmaMulDistributes,0.598459,Errors
+46,46,189,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulDistributes,0.669675,Correct,"assert f1(y);
+",./DafnyGym/assertions_removed/LemmaMulDistributes_fix_189.dfy,LemmaMulDistributes,0.666272,Errors
+47,47,190,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/MulInternals.dfy,LemmaMulDistributes,0.669675,Correct,"assert f2(y);
+",./DafnyGym/assertions_removed/LemmaMulDistributes_fix_190.dfy,LemmaMulDistributes,0.686236,Errors
+48,48,197,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionAuto,0.543003,Correct,"assert forall i {:trigger f(i), f(i - n)} :: IsLe(i + 1, n) && f(i) ==> f(i - n);
+",./DafnyGym/assertions_removed/LemmaModInductionAuto_fix_197.dfy,LemmaModInductionAuto,0.59427,Errors
+49,49,199,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionForall2,0.593418,Correct,"assert fj(y);
+",./DafnyGym/assertions_removed/LemmaModInductionForall2_fix_199.dfy,LemmaModInductionForall2,0.558398,Errors
+50,50,200,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionForall2,0.593418,Correct,"assert fi(x);
+",./DafnyGym/assertions_removed/LemmaModInductionForall2_fix_200.dfy,LemmaModInductionForall2,0.56025,Errors
+51,51,201,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionAutoForall,0.604136,Correct,"assert forall i :: IsLe(0, i) && i < n ==> f(i);
+",./DafnyGym/assertions_removed/LemmaModInductionAutoForall_fix_201.dfy,LemmaModInductionAutoForall,0.524119,Errors
+52,52,202,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionAutoForall,0.604136,Correct,"assert forall i {:trigger f(i), f(i + n)} :: IsLe(0, i) && f(i) ==> f(i + n);
+",./DafnyGym/assertions_removed/LemmaModInductionAutoForall_fix_202.dfy,LemmaModInductionAutoForall,0.552546,Errors
+53,53,203,./DafnyGym/ground_truth/libraries/src/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionAutoForall,0.604136,Correct,"assert forall i {:trigger f(i), f(i - n)} :: IsLe(i + 1, n) && f(i) ==> f(i - n);
+",./DafnyGym/assertions_removed/LemmaModInductionAutoForall_fix_203.dfy,LemmaModInductionAutoForall,0.596705,Errors
+54,54,204,./DafnyGym/ground_truth/libraries/src/Unicode/UnicodeEncodingForm.dfy,LemmaSplitPrefixMinimalWellFormedCodeUnitSubsequenceInvertsPrepend,0.507722,Correct,"assert IsMinimalWellFormedCodeUnitSubsequence(ms[..|m|]);
+",./DafnyGym/assertions_removed/LemmaSplitPrefixMinimalWellFormedCodeUnitSubsequenceInvertsPrepend_fix_204.dfy,LemmaSplitPrefixMinimalWellFormedCodeUnitSubsequenceInvertsPrepend,0.550159,Errors
+55,55,211,./DafnyGym/ground_truth/libraries/src/dafny/BinaryOperations.dfy,MonoidInverseIsUnique,0.640487,Correct,"assert IsMonoid(m.bop, m.unit);
+",./DafnyGym/assertions_removed/MonoidInverseIsUnique_fix_211.dfy,MonoidInverseIsUnique,318.781088,TimedOut
+56,56,378,./DafnyGym/ground_truth/libraries/src/dafny/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionAuto,0.530788,Correct,"assert forall i :: IsLe(0, i) && i < n ==> f(i);
+",./DafnyGym/assertions_removed/LemmaModInductionAuto_fix_378.dfy,LemmaModInductionAuto,0.538697,Errors
+57,57,379,./DafnyGym/ground_truth/libraries/src/dafny/NonlinearArithmetic/Internals/ModInternals.dfy,LemmaModInductionAuto,0.530788,Correct,"assert forall i {:trigger f(i), f(i + n)} :: IsLe(0, i) && f(i) ==> f(i + n);
+",./DafnyGym/assertions_removed/LemmaModInductionAuto_fix_379.dfy,LemmaModInductionAuto,0.523397,Errors

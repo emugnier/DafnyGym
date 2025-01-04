@@ -1,0 +1,109 @@
+,Unnamed: 0,Index,Original Method File,Original Method,Original Method Time,Original Method Result,Assertion,New Method File,New Method,New Method Time,New Method Result
+0,0,891,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/def/ext/ipaddr.dfy,CountDCComp,0.547736,Correct,"assert l + r == r;
+",./DafnyGym/assertions_removed/CountDCComp_fix_891.dfy,CountDCComp,0.563452,Errors
+1,1,443,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundEqAuxDiffUids,2.972371,Correct,"assert TC.inferEq(e1,e2,effs) == types.Ok(t');
+",./DafnyGym/assertions_removed/SoundEqAuxDiffUids_fix_443.dfy,SoundEqAuxDiffUids,3.579112,Errors
+2,2,104,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrRShortSafe,2.527918,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e,r,s);
+",./DafnyGym/assertions_removed/OrRShortSafe_fix_104.dfy,OrRShortSafe,2.923418,Errors
+3,3,854,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/strict_soundness.dfy,StrictGetLubRecordType,1.022444,Correct,"assert ets.getLubRecordType(lub, ValidationMode.Permissive).Ok?;
+",./DafnyGym/assertions_removed/StrictGetLubRecordType_fix_854.dfy,StrictGetLubRecordType,1.041067,Errors
+4,4,94,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrRRetSafe,2.526335,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e,r,s);
+",./DafnyGym/assertions_removed/OrRRetSafe_fix_94.dfy,OrRRetSafe,2.807638,Errors
+5,5,109,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrRShortSafe,2.527918,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e',r,s);
+",./DafnyGym/assertions_removed/OrRShortSafe_fix_109.dfy,OrRShortSafe,2.6312,Errors
+6,6,82,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,AndRShortSafe,2.483498,Correct,"assert Evaluator(r,s).interpretShortcircuit(And(e,e'),e,e',false) == base.Ok(Value.Primitive(Primitive.Bool(false)));
+",./DafnyGym/assertions_removed/AndRShortSafe_fix_82.dfy,AndRShortSafe,3.089938,Errors
+7,7,788,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundArith,7.420007,Correct,"assert TC.inferArith2(op,e1,e2,effs) == types.Ok(Type.Int);
+",./DafnyGym/assertions_removed/SoundArith_fix_788.dfy,SoundArith,7.147276,Errors
+8,8,816,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundInSetMemberFalse,8.751712,Correct,"assert !ets.possibleDescendantOf(et1,u2.ty);
+",./DafnyGym/assertions_removed/SoundInSetMemberFalse_fix_816.dfy,SoundInSetMemberFalse,9.943644,Errors
+9,9,797,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundIneq,7.555545,Correct,"assert TC.ensureIntType(e1,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundIneq_fix_797.dfy,SoundIneq,8.084037,Errors
+10,10,857,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/strict_soundness.dfy,StrictGetLubRecordType,1.022444,Correct,"assert ets.getLubRecordType(lub, ValidationMode.Strict).Ok?;
+",./DafnyGym/assertions_removed/StrictGetLubRecordType_fix_857.dfy,StrictGetLubRecordType,1.064734,Errors
+11,11,2,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/subtyping.dfy,StrictSubtyIsStrict,0.887354,Correct,"assert exists k | k in rt2.attrs.Keys :: !subtyAttrType(rt1.attrs[k], rt2.attrs[k], ValidationMode.Strict);
+",./DafnyGym/assertions_removed/StrictSubtyIsStrict_fix_2.dfy,StrictSubtyIsStrict,0.948456,Errors
+12,12,856,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/strict_soundness.dfy,StrictGetLubRecordType,1.022444,Correct,"assert s != [];
+",./DafnyGym/assertions_removed/StrictGetLubRecordType_fix_856.dfy,StrictGetLubRecordType,1.015132,Errors
+13,13,895,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/def/ext/ipaddr.dfy,CountDC1SepMeansNoDc,0.554401,Correct,"assert segs[0..idx.value+1] == segs[0..idx.value] + [segs[idx.value]];
+",./DafnyGym/assertions_removed/CountDC1SepMeansNoDc_fix_895.dfy,CountDC1SepMeansNoDc,0.596214,Errors
+14,14,772,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundOr,7.355535,Correct,"assert TC.inferOr(e1,e2,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundOr_fix_772.dfy,SoundOr,9.664991,Errors
+15,15,46,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrTrueStrong,2.212327,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e1,e2),e1,e2,true) == base.Ok(Value.Bool(true));
+",./DafnyGym/assertions_removed/OrTrueStrong_fix_46.dfy,OrTrueStrong,2.522678,Errors
+16,16,67,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,SubtyCompatMatchPointwise,2.39237,Correct,"assert subtyAttrType(rt1.attrs[k],rt2.attrs[k],ValidationMode.Permissive);
+",./DafnyGym/assertions_removed/SubtyCompatMatchPointwise_fix_67.dfy,SubtyCompatMatchPointwise,2.632833,Errors
+17,17,888,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/def/ext/decimal.dfy,ParseDigitsAndDot,0.585048,Correct,"assert ParseDecStr("".""+s2).None?;
+",./DafnyGym/assertions_removed/ParseDigitsAndDot_fix_888.dfy,ParseDigitsAndDot,0.620225,Errors
+18,18,58,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,AndSafe,2.349787,Correct,"assert Evaluator(r,s).interpretShortcircuit(And(e,e'),e,e',false) == Evaluate(e,r,s);
+",./DafnyGym/assertions_removed/AndSafe_fix_58.dfy,AndSafe,2.820783,Errors
+19,19,77,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,AndLRetSafe,2.427302,Correct,"assert Evaluator(r,s).interpretShortcircuit(And(e,e'),e,e',false) == base.Ok(Value.Primitive(Primitive.Bool(false)));
+",./DafnyGym/assertions_removed/AndLRetSafe_fix_77.dfy,AndLRetSafe,3.142929,Errors
+20,20,756,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundIf,7.140472,Correct,"assert TC.inferIf(e,e1,e2,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundIf_fix_756.dfy,SoundIf,10.57167,Errors
+21,21,799,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundIneq,7.555545,Correct,"assert TC.ensureIntType(e2,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundIneq_fix_799.dfy,SoundIneq,8.388792,Errors
+22,22,49,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrSafe,2.319476,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e,r,s);
+",./DafnyGym/assertions_removed/OrSafe_fix_49.dfy,OrSafe,2.734827,Errors
+23,23,92,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrRRetSafe,2.526335,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == base.Ok(Value.Primitive(Primitive.Bool(b)));
+",./DafnyGym/assertions_removed/OrRRetSafe_fix_92.dfy,OrRRetSafe,3.496399,Errors
+24,24,791,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundArith,7.420007,Correct,"assert TC.ensureIntType(e2,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundArith_fix_791.dfy,SoundArith,8.414759,Errors
+25,25,873,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/thm/eval/basic.dfy,RecordSemanticsOkAttrs,1.736191,Correct,"assert (set e | e in es :: e.0) == (set e | e in es[1..] :: e.0) + {es[0].0};
+",./DafnyGym/assertions_removed/RecordSemanticsOkAttrs_fix_873.dfy,RecordSemanticsOkAttrs,3.165908,Errors
+26,26,45,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,AndTrueStrong,2.133436,Correct,"assert Evaluator(r,s).interpretShortcircuit(And(e1,e2),e1,e2,false) == base.Ok(Value.Bool(true));
+",./DafnyGym/assertions_removed/AndTrueStrong_fix_45.dfy,AndTrueStrong,2.356182,Errors
+27,27,750,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundLike,5.853363,Correct,"assert TC.inferLike(p,e,effs) == types.Ok(Type.Bool(AnyBool));
+",./DafnyGym/assertions_removed/SoundLike_fix_750.dfy,SoundLike,6.558524,Errors
+28,28,820,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundInSetMemberFalse,8.751712,Correct,"assert !ets.possibleDescendantOf(u1.ty,u2.ty);
+",./DafnyGym/assertions_removed/SoundInSetMemberFalse_fix_820.dfy,SoundInSetMemberFalse,9.53322,Errors
+29,29,862,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/strict_soundness.dfy,StrictIn,2.563403,Correct,"assert S_TC.ensureEntityType(e1,effs).Ok?;
+",./DafnyGym/assertions_removed/StrictIn_fix_862.dfy,StrictIn,2.815387,Errors
+30,30,801,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundMulBy,7.780813,Correct,"assert TC.inferArith1(MulBy(i),e,effs) == types.Ok(Type.Int);
+",./DafnyGym/assertions_removed/SoundMulBy_fix_801.dfy,SoundMulBy,7.113969,Errors
+31,31,883,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/def/util.dfy,SeqAddInequality,0.494137,Correct,"assert (s1 + [t1])[i] != (s2 + [t2])[i];
+",./DafnyGym/assertions_removed/SeqAddInequality_fix_883.dfy,SeqAddInequality,0.507138,Errors
+32,32,802,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundMulBy,7.780813,Correct,"assert TC.ensureIntType(e,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundMulBy_fix_802.dfy,SoundMulBy,6.998867,Errors
+33,33,890,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/def/ext/ipaddr.dfy,CountDCLast,0.521292,Correct,"assert wrapNumSegs(s)+[DC] == wrapNumSegs([s[0]]) + (wrapNumSegs(s[1..]) + [DC]);
+",./DafnyGym/assertions_removed/CountDCLast_fix_890.dfy,CountDCLast,0.523966,Errors
+34,34,99,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrRRetSafe,2.526335,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e',r,s);
+",./DafnyGym/assertions_removed/OrRRetSafe_fix_99.dfy,OrRRetSafe,3.008781,Errors
+35,35,852,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/strict_inf_strict.dfy,StrictGetAttr,2.667553,Correct,"assert S_TC.inferRecordEntityType(e,effs).Ok?;
+",./DafnyGym/assertions_removed/StrictGetAttr_fix_852.dfy,StrictGetAttr,4.893102,Errors
+36,36,37,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,EqEntityDiffSafe,1.890528,Correct,"assert Evaluator(r,s).interpret(e) == base.Ok(Value.Primitive(Primitive.Bool(false)));
+",./DafnyGym/assertions_removed/EqEntityDiffSafe_fix_37.dfy,EqEntityDiffSafe,1.973844,Errors
+37,37,4,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/subtyping.dfy,StrictTypeLub,1.032564,Correct,"assert strict_attrs == lubRecordType(rt1, rt2, ValidationMode.Strict).value.attrs;
+",./DafnyGym/assertions_removed/StrictTypeLub_fix_4.dfy,StrictTypeLub,1.027387,Errors
+38,38,855,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/strict_soundness.dfy,StrictGetLubRecordType,1.022444,Correct,"assert forall et <- lub.tys :: et in ets.types;
+",./DafnyGym/assertions_removed/StrictGetLubRecordType_fix_855.dfy,StrictGetLubRecordType,1.088295,Errors
+39,39,5,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/subtyping.dfy,LubUndefUbUndef,1.155167,Correct,"assert lubRecordType(rt1, rt2, ValidationMode.Strict).Err?;
+",./DafnyGym/assertions_removed/LubUndefUbUndef_fix_5.dfy,LubUndefUbUndef,1.15831,Errors
+40,40,743,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundNot,4.654195,Correct,"assert TC.inferNot(e,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundNot_fix_743.dfy,SoundNot,7.424277,Errors
+41,41,27,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrLShortSafe,1.704221,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e,r,s);
+",./DafnyGym/assertions_removed/OrLShortSafe_fix_27.dfy,OrLShortSafe,1.969853,Errors
+42,42,809,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundInSetMemberFalse,8.751712,Correct,"assert TC.inferIn(BinaryApp(BinaryOp.In,e1,e2),e1,e2,effs) == types.Ok(Type.Bool(False));
+",./DafnyGym/assertions_removed/SoundInSetMemberFalse_fix_809.dfy,SoundInSetMemberFalse,7.009314,Errors
+43,43,102,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrRShortSafe,2.527918,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == base.Ok(Value.Primitive(Primitive.Bool(true)));
+",./DafnyGym/assertions_removed/OrRShortSafe_fix_102.dfy,OrRShortSafe,2.90958,Errors
+44,44,54,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,OrSafe,2.319476,Correct,"assert Evaluator(r,s).interpretShortcircuit(Or(e,e'),e,e',true) == Evaluate(e',r,s);
+",./DafnyGym/assertions_removed/OrSafe_fix_54.dfy,OrSafe,3.089712,Errors
+45,45,33,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,AndLShortSafe,1.880603,Correct,"assert Evaluator(r,s).interpretShortcircuit(And(e,e'),e,e',false) == base.Ok(Value.Primitive(Primitive.Bool(false)));
+",./DafnyGym/assertions_removed/AndLShortSafe_fix_33.dfy,AndLShortSafe,2.194488,Errors
+46,46,789,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundArith,7.420007,Correct,"assert TC.ensureIntType(e1,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundArith_fix_789.dfy,SoundArith,8.77017,Errors
+47,47,19,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/subtyping.dfy,StrictLubIsStrict,1.916766,Correct,"assert permissive_attrs == strict_attrs;
+",./DafnyGym/assertions_removed/StrictLubIsStrict_fix_19.dfy,StrictLubIsStrict,1.613382,Errors
+48,48,771,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundContains,7.231691,Correct,"assert TC.inferContainsAnyAll(op,e1,e2,effs) == types.Ok(t');
+",./DafnyGym/assertions_removed/SoundContains_fix_771.dfy,SoundContains,8.571935,Errors
+49,49,838,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundHasAttr,10.386103,Correct,"assert TC.inferHasAttr(e,k,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundHasAttr_fix_838.dfy,SoundHasAttr,9.227006,Errors
+50,50,72,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/model.dfy,AndLRetSafe,2.427302,Correct,"assert Evaluator(r,s).interpretShortcircuit(And(e,e'),e,e',false) == Evaluate(e,r,s);
+",./DafnyGym/assertions_removed/AndLRetSafe_fix_72.dfy,AndLRetSafe,2.930886,Errors
+51,51,731,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,TypesafeCallSemantics,3.514105,Correct,"assert TC.inferCall(Call(name,es),name,es,effs).Ok?;
+",./DafnyGym/assertions_removed/TypesafeCallSemantics_fix_731.dfy,TypesafeCallSemantics,2.965913,Errors
+52,52,810,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/thm/soundness.dfy,SoundInSetMemberFalse,8.751712,Correct,"assert TC.ensureEntityType(e1,effs).Ok?;
+",./DafnyGym/assertions_removed/SoundInSetMemberFalse_fix_810.dfy,SoundInSetMemberFalse,8.79195,Errors
+53,53,7,./DafnyGym/ground_truth/cedar-spec/cedar-dafny/validation/subtyping.dfy,LubIsUB,1.804894,Correct,"assert t2 == t; SubtyRefl(t);
+",./DafnyGym/assertions_removed/LubIsUB_fix_7.dfy,LubIsUB,1.917783,Errors

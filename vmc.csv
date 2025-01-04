@@ -1,0 +1,67 @@
+,Unnamed: 0,Index,Original Method File,Original Method,Original Method Time,Original Method Result,Assertion,New Method File,New Method,New Method Time,New Method Result
+0,0,1,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Helper.dfy,DivModAddDenominator,3.706939,Correct,"assert 0 == m * zp + ((n + m) % m) - (n % m);
+",./DafnyGym/assertions_removed/DivModAddDenominator_fix_1.dfy,DivModAddDenominator,7.607721,OutOfResource
+1,1,4,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Rationals.dfy,FloorIsCorrect,7.155055,Errors,"assert Floor(r) as real <= ToReal(r);
+",./DafnyGym/assertions_removed/FloorIsCorrect_fix_4.dfy,FloorIsCorrect,7.867614,Errors
+2,2,5,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Rationals.dfy,FloorIsCorrect,7.155055,Errors,"assert r.numer < nextMultiple;
+",./DafnyGym/assertions_removed/FloorIsCorrect_fix_5.dfy,FloorIsCorrect,8.013088,Errors
+3,3,6,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Measures.dfy,PosCountAddImpliesAdd,7.751982,Correct,"assert CountableUnion(f) == e1 + e2;
+",./DafnyGym/assertions_removed/PosCountAddImpliesAdd_fix_6.dfy,PosCountAddImpliesAdd,8.998984,Errors
+4,4,11,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitIsMultiplicative,3.583202,Correct,"assert ExistsCloseSuffix(sequence1, limit1, epsilon1);
+",./DafnyGym/assertions_removed/LimitIsMultiplicative_fix_11.dfy,LimitIsMultiplicative,6.898129,Errors
+5,5,12,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitIsMultiplicative,3.583202,Correct,"assert ExistsCloseSuffix(sequence2, limit2, epsilon2);
+",./DafnyGym/assertions_removed/LimitIsMultiplicative_fix_12.dfy,LimitIsMultiplicative,8.953913,Errors
+6,6,14,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitOfInverse,4.634341,Correct,"assert ExistsCloseSuffix(sequence, limit, epsilon');
+",./DafnyGym/assertions_removed/LimitOfInverse_fix_14.dfy,LimitOfInverse,7.900194,Errors
+7,7,15,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,ConstantSequenceConverges,4.641033,Correct,"assert SuffixIsClose(Sequences.Constant(constant), constant, epsilon, 0);
+",./DafnyGym/assertions_removed/ConstantSequenceConverges_fix_15.dfy,ConstantSequenceConverges,8.210573,Errors
+8,8,16,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitIsUnique,5.32759,Correct,"assert ExistsCloseSuffix(sequence, limit1, epsilon);
+",./DafnyGym/assertions_removed/LimitIsUnique_fix_16.dfy,LimitIsUnique,8.73824,Errors
+9,9,17,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitIsUnique,5.32759,Correct,"assert ExistsCloseSuffix(sequence, limit2, epsilon);
+",./DafnyGym/assertions_removed/LimitIsUnique_fix_17.dfy,LimitIsUnique,9.033401,Errors
+10,10,18,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,BoundOfConvergentSequence,5.700805,Correct,"assert ExistsCloseSuffix(sequence, limit, 1.0);
+",./DafnyGym/assertions_removed/BoundOfConvergentSequence_fix_18.dfy,BoundOfConvergentSequence,8.28438,Errors
+11,11,22,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitIsAdditive,5.712105,Correct,"assert ExistsCloseSuffix(sequence1, limit1, epsilon / 2.0);
+",./DafnyGym/assertions_removed/LimitIsAdditive_fix_22.dfy,LimitIsAdditive,7.93546,Errors
+12,12,23,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitIsAdditive,5.712105,Correct,"assert ExistsCloseSuffix(sequence2, limit2, epsilon / 2.0);
+",./DafnyGym/assertions_removed/LimitIsAdditive_fix_23.dfy,LimitIsAdditive,7.371582,Errors
+13,13,24,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Limits.dfy,LimitOfMultiplicationWithZeroSequence,5.956591,Correct,"assert ExistsCloseSuffix(zeroSeq, 0.0, epsilon');
+",./DafnyGym/assertions_removed/LimitOfMultiplicationWithZeroSequence_fix_24.dfy,LimitOfMultiplicationWithZeroSequence,7.739465,Errors
+14,14,26,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Sequences.dfy,OneOverNPlus1IsAntimonotonic,3.175241,Correct,"assert np1 > 0.0;
+",./DafnyGym/assertions_removed/OneOverNPlus1IsAntimonotonic_fix_26.dfy,OneOverNPlus1IsAntimonotonic,7.316246,Errors
+15,15,27,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Reals.dfy,Sqrt2Exists,3.34815,Correct,"assert 1.0 in lower;
+",./DafnyGym/assertions_removed/Sqrt2Exists_fix_27.dfy,Sqrt2Exists,8.397401,Errors
+16,16,28,./DafnyGym/ground_truth/Dafny-VMC/src/Math/Analysis/Reals.dfy,Sqrt2Exists,3.34815,Correct,"assert 2.0 in upper;
+",./DafnyGym/assertions_removed/Sqrt2Exists_fix_28.dfy,Sqrt2Exists,8.27509,Errors
+17,17,56,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,UnifCorrectness2Inequality,2.860046,Correct,"assert e == iset{};
+",./DafnyGym/assertions_removed/UnifCorrectness2Inequality_fix_56.dfy,UnifCorrectness2Inequality,2.32977,Errors
+18,18,57,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,UnifCorrectness2Inequality,2.860046,Correct,"assert e == e1 + e2;
+",./DafnyGym/assertions_removed/UnifCorrectness2Inequality_fix_57.dfy,UnifCorrectness2Inequality,2.656248,Errors
+19,19,58,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,UnifCorrectness,3.11303,Correct,"assert e == preimage;
+",./DafnyGym/assertions_removed/UnifCorrectness_fix_58.dfy,UnifCorrectness,2.56264,Errors
+20,20,60,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,UnifCorrectness2,3.374044,Correct,"assert e == preimage;
+",./DafnyGym/assertions_removed/UnifCorrectness2_fix_60.dfy,UnifCorrectness2,2.046322,Errors
+21,21,61,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,UnifCorrectness2,3.374044,Correct,"assert UnifIsCorrect(n, k, m);
+",./DafnyGym/assertions_removed/UnifCorrectness2_fix_61.dfy,UnifCorrectness2,1.625887,Errors
+22,22,62,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,SampleIsMeasurePreserving,4.024397,Correct,"assert Measures.PreImage(f, e) == preimage';
+",./DafnyGym/assertions_removed/SampleIsMeasurePreserving_fix_62.dfy,SampleIsMeasurePreserving,2.817518,Errors
+23,23,65,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,SampleIsMeasurePreserving,4.024397,Correct,"assert e' == Measures.PreImage(Rand.Tail, e);
+",./DafnyGym/assertions_removed/SampleIsMeasurePreserving_fix_65.dfy,SampleIsMeasurePreserving,17.675597,OutOfResource
+24,24,70,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,SampleRecursiveHalf,5.064463,Correct,"assert E == (iset s | Rand.Head(s) == (m % 2 == 1));
+",./DafnyGym/assertions_removed/SampleRecursiveHalf_fix_70.dfy,SampleRecursiveHalf,4.519725,Errors
+25,25,72,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/UniformPowerOfTwo/Correctness.dfy,SampleRecursiveHalf,5.064463,Correct,"assert Independence.IsIndepFunctionCondition(Model.Sample(n / 2), A, E);
+",./DafnyGym/assertions_removed/SampleRecursiveHalf_fix_72.dfy,SampleRecursiveHalf,5.878601,Errors
+26,26,77,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/Uniform/Model.dfy,SampleTerminates,3.134541,Correct,"assert e == Measures.PreImage(UniformPowerOfTwo.Model.Sample(2 * n), resultsLtN);
+",./DafnyGym/assertions_removed/SampleTerminates_fix_77.dfy,SampleTerminates,3.06655,Errors
+27,27,78,./DafnyGym/ground_truth/Dafny-VMC/src/Distributions/Uniform/Model.dfy,SampleTerminates,3.134541,Correct,"assert e == (iset s | UniformPowerOfTwo.Model.Sample(2 * n)(s).value < n);
+",./DafnyGym/assertions_removed/SampleTerminates_fix_78.dfy,SampleTerminates,3.266195,Errors
+28,28,86,./DafnyGym/ground_truth/Dafny-VMC/src/ProbabilisticProgramming/Monad.dfy,LiftInEventSpaceToResultEventSpace,5.63072,Correct,"assert v in event <==> Result(v, s) in results;
+",./DafnyGym/assertions_removed/LiftInEventSpaceToResultEventSpace_fix_86.dfy,LiftInEventSpaceToResultEventSpace,5.956089,Errors
+29,29,87,./DafnyGym/ground_truth/Dafny-VMC/src/ProbabilisticProgramming/Monad.dfy,LiftInEventSpaceToResultEventSpace,5.63072,Correct,"assert Rests(results) == iset{};
+",./DafnyGym/assertions_removed/LiftInEventSpaceToResultEventSpace_fix_87.dfy,LiftInEventSpaceToResultEventSpace,6.374021,Errors
+30,30,89,./DafnyGym/ground_truth/Dafny-VMC/src/ProbabilisticProgramming/Loops.dfy,WhileUnroll,3.445536,Correct,"assert WhileCutTerminatesWithFuel(condition, body, init', s')(fuel');
+",./DafnyGym/assertions_removed/WhileUnroll_fix_89.dfy,WhileUnroll,4.623278,Errors
+31,31,94,./DafnyGym/ground_truth/Dafny-VMC/src/ProbabilisticProgramming/Loops.dfy,WhileUnrollIfConditionSatisfied,3.887351,Correct,"assert WhileCutTerminatesWithFuel(condition, body, init', s')(fuel');
+",./DafnyGym/assertions_removed/WhileUnrollIfConditionSatisfied_fix_94.dfy,WhileUnrollIfConditionSatisfied,3.799035,Errors
+32,32,98,./DafnyGym/ground_truth/Dafny-VMC/src/ProbabilisticProgramming/Loops.dfy,EnsureUntilTerminates,3.935407,Correct,"assert (iset s | proposalIsAccepted(s)) == (iset s | WhileLoopExitsAfterOneIteration(body, reject, a)(s));
+",./DafnyGym/assertions_removed/EnsureUntilTerminates_fix_98.dfy,EnsureUntilTerminates,4.366817,Errors
