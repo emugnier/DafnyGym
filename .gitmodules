@@ -1,0 +1,3 @@
+[submodule "ground_truth/Dafny-VMC"]
+	path = ground_truth/Dafny-VMC
+	url = https://github.com/dafny-lang/Dafny-VMC
