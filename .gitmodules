@@ -1,3 +1,6 @@
 [submodule "ground_truth/Dafny-VMC"]
 	path = ground_truth/Dafny-VMC
 	url = https://github.com/dafny-lang/Dafny-VMC
+[submodule "ground_truth/cedar-spec"]
+	path = ground_truth/cedar-spec
+	url = https://github.com/cedar-policy/cedar-spec
