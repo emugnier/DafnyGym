@@ -1,0 +1,12 @@
+cedar:
+  dafny_version: "4.3"
+  dafny_args: "--verification-time-limit:30"
+  location: "/DafnyGym/ground_truth/cedar-spec"
+libraries:
+  dafny_version: "4.3"
+  dafny_args: "--use-basename-for-filename --cores:1 --verification-time-limit:30 --disable-nonlinear-arithmetic"
+  location: "/DafnyGym/ground_truth/libraries"
+vmc:
+  dafny_version: "4.3"
+  dafny_args: "--library ./src/**/*.dfy --resource-limit 20000"
+  location: "/DafnyGym/ground_truth/Dafny-VMC"
