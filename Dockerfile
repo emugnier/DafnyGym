@@ -47,7 +47,7 @@ RUN curl https://pyenv.run | bash \
 
 RUN pip install pyyaml
 
-RUN git clone https://github.com/emugnier/DafnyGym.git
+RUN git clone --recurse-submodules https://github.com/emugnier/DafnyGym.git
 
 WORKDIR /DafnyGym
 RUN mkdir results && mkdir logs

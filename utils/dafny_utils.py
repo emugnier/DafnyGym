@@ -248,7 +248,6 @@ def extract_method_and_lemma_names(content):
 
 def replace_method(file_content, old_method_name, new_method_content):
     function = extract_dafny_functions(file_content, old_method_name)
-    print(f"function: {function}")
     dafny_code = file_content.replace(function, new_method_content)
     return dafny_code
 

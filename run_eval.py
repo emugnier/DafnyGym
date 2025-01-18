@@ -21,9 +21,8 @@ def main():
     with open(DAFNY_CONFIG, 'r') as file:
         configs = yaml.safe_load(file)
     
-    # Read each line of the solutions
     results = []
-    ct = 0
+
     for prediction in predictions:
         logger.info(f"Processing prediction {prediction['index']}")
         os.chdir(configs[prediction["benchmark_name"]]["location"])
@@ -33,16 +32,9 @@ def main():
         
         method_to_verify = Method(prediction["method_filename"], prediction["method_name"], index=prediction["index"])
         result = method_to_verify.run_verification(RESULTS_DIR, additionnal_args=configs[prediction["benchmark_name"]]["dafny_args"])
-        # Run the command and capture the output
-            # Log the current working directory
-        current_working_directory = os.getcwd()
-        logger.info(f"Current working directory: {current_working_directory}")
-        result = subprocess.run(["git", "checkout", "."], capture_output=True, text=True)
-        logger.error(f"error message verif: {method_to_verify.error_message}")
 
-        # Print the output
-        logger.info(f"stdout: {result.stdout}")
-        logger.error(f"stderr: {result.stderr}")
+        result = subprocess.run(["git", "checkout", "."], capture_output=True, text=True)
+
         prediction_results = {
             "index": prediction["index"],
             "method_name": prediction["method_name"],
@@ -51,14 +43,10 @@ def main():
             "error_message": method_to_verify.error_message
         }
         results.append(prediction_results)
-        ct += 1
-        if ct == 3:
-            break
 
-    # verify the file
-    # report the results
     with open(os.path.join(RESULTS_DIR, RESULT_FILE), "w") as file:
-        json.dump(results, file)
+        json.dump(results, file, indent=4)
+        print(json.dumps(results, indent=4))
 
 
 if __name__ == "__main__":
